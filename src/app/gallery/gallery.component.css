@@ -1,7 +1,9 @@
 .left{
     min-width: 450px;
+    min-height: 700px;
 }
 
 .right{
     min-width: 450px;
+    min-height: 700px;
 }
