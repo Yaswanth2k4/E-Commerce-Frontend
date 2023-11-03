@@ -2,15 +2,15 @@ const offerItems=[
     {
         "imagePath":'assets/images/spider.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
+        "title":'Lushy Spider plant(Chlorophytum)',
         "reviews":277,
         "discount":"Extra 30% Instant Discount"
     },
     {
         "imagePath":'assets/images/anthurium.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Beautiful Anthurium - Plant of the Season',
+        "reviews":436,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"80%",
@@ -22,8 +22,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/peacelily.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Graceful Elegance: White Peace Lily Plant',
+        "reviews":345,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"85%",
@@ -35,8 +35,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/jade.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Goodluck Jade plant with pot',
+        "reviews":147,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"85%",
@@ -48,8 +48,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/philodendron.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Philodendron plant with rocky type basket',
+        "reviews":265,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"85%",
@@ -61,8 +61,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/aglonema.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Aglonema-Butterfly Manis Plant',
+        "reviews":762,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"82%",
@@ -74,8 +74,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/snake.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Sansevieria trifasciata, Snake Plant (var. laurentii) - Plant',
+        "reviews":497,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"82%",
@@ -89,7 +89,7 @@ const offerItems=[
         "price":"559",
         "title":'Top-4 Diehard Succulents Pack',
         "orig_price":"1014",
-        "reviews":277,
+        "reviews":564,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"100%",
@@ -99,8 +99,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/calatheas.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Peacock Plant, Calathea Makoyana- Plant',
+        "reviews":125,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"73%",
@@ -113,8 +113,8 @@ const offerItems=[
     {
         "imagePath":'assets/images/pearls.png',
         "price":"559",
-        "title":'Top-4 Diehard Succulents Pack',
-        "reviews":277,
+        "title":'Senecio rowleyanus, String of Pearls - Succulent Plant',
+        "reviews":867,
         "discount":"Extra 30% Instant Discount",
         "style":{ 
             "width":"50%",

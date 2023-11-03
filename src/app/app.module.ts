@@ -9,6 +9,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { BannerComponent } from './banner/banner.component';
 import { OfferitemComponent } from './offeritem/offeritem.component';
 import { FeaturesComponent } from './features/features.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FeaturesComponent } from './features/features.component';
     SlideshowComponent,
     BannerComponent,
     OfferitemComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
