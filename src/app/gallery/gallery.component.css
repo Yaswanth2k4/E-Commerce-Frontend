@@ -6,7 +6,7 @@
 }
 
 .left{
-    min-width: 450px;
+    min-width: 375px;
     width:60%;
     height:95vh;
     overflow: hidden;
@@ -14,7 +14,7 @@
 }
 
 .right{
-    min-width: 450px;
+    min-width: 375px;
     min-height: 700px;
     width:40%;
     height:95vh;
@@ -24,11 +24,6 @@
 
 .l2{
     height:48%;
-}
-
-.right{
-    min-width: 450px;
-    min-height: 700px;
 }
 
 .hover img{
