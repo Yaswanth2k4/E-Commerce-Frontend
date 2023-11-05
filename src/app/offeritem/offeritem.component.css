@@ -6,12 +6,9 @@ img{
     transition: all 0.5s;
     transform: scale(0.9,0.9);
 }
-.img-bg:hover img{
-    transform:  scale(1.1,1.1);
-}
 
 .product.card{
-    min-width: 250px;
+    min-width: 300px;
     border: 1px solid #e6e6e6;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: all 0s;
@@ -27,4 +24,9 @@ img{
 
 .product.card:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 120%;
+}
+
+.product.card:hover img{
+    transform:  scale(1.1,1.1);
 }

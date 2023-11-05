@@ -6,20 +6,24 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlideshowComponent } from './slideshow/slideshow.component';
-import { BannerComponent } from './banner/banner.component';
 import { OfferitemComponent } from './offeritem/offeritem.component';
 import { FeaturesComponent } from './features/features.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { SecondfeatureComponent } from './secondfeature/secondfeature.component';
+import { EssentialsComponent } from './essentials/essentials.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SlideshowComponent,
-    BannerComponent,
     OfferitemComponent,
     FeaturesComponent,
-    GalleryComponent
+    GalleryComponent,
+    SecondfeatureComponent,
+    EssentialsComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
