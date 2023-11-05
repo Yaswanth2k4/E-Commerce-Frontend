@@ -59,4 +59,13 @@
         width: 100%;
         padding: 0px;
     }
+    .card-img-overlay h1{
+        font-size: 23px;
+    }
+    .card-img-overlay h3{
+        font-size: 23px;
+    }
+    .card-img-overlay h5{
+        font-size: 15px;
+    }
 }
