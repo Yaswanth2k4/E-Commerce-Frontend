@@ -1,4 +1,4 @@
-<div class="loginbox container border rounded-3 mb-5 d-flex flex-column">
+<div [style]="ls.visibility" class="loginbox container border rounded-3 mb-5 d-flex flex-column">
     <h2 *ngIf="Login" class="text-center mt-3">Login</h2>
     <h2 *ngIf="!Login" class="text-center mt-3">SignUp</h2>
     <div class="buttons container border-0 rounded-2 w-75 mt-4 px-0 d-flex flex-row" style="background-color: lightgray;">
@@ -13,4 +13,4 @@
         <button *ngIf="!Login" type="submit" class="btn btn-dark container">SignUp</button>
     </form>
     <h5 *ngIf="Login" (click)="signupClick()" class="mt-4 text-center">New user?<span><button class="border-0 bg-white fw-semibold" style="color:blue">Signup</button></span></h5>
-</div>  
+</div>

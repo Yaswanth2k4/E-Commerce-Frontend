@@ -2,6 +2,10 @@
     fill:black;
 }
 
+.home{
+    fill:#5b5d62;
+}
+
 header{
     top:0;
     overflow: hidden;

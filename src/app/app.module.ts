@@ -14,6 +14,7 @@ import { EssentialsComponent } from './essentials/essentials.component';
 import { VideoComponent } from './video/video.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
+import { LoginService } from './login.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { CartComponent } from './cart/cart.component';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
