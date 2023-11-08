@@ -9,6 +9,12 @@
     height:55vh;
 }
 
+a{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
 .buttons button{
     height: 50px;
     font-size: 21px;

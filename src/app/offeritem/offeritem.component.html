@@ -1,7 +1,7 @@
 <h4 class="mt-5 text-center" style="color: #333333;">Value For Money - Upto 35% off</h4>
 <div class="offers card border-0 rounded-0 mt-4 mb-5 mx-5" style="height: 34rem;"> 
     <div class="card border-0 rounded-0 d-flex flex-row py-3 justify-content-start" style="width: 205%; height:100%">
-        <div *ngFor="let item of items"  class="product card me-1 ms-1 mb-5 rounded-0 w-100" style="height:32rem;">
+        <div *ngFor="let item of items;index as i"  class="product card me-1 ms-1 mb-5 rounded-0 w-100" style="height:32rem;">
             <div class="img-bg mx-3 mt-3 w-90" style="height:60%;background-color:  #f2f2f2;overflow: hidden;">
                 <img class="img-fluid" type="png" [src]="item.imagePath"  alt="succulent-set" [style]="item.style" >
             </div>
@@ -23,7 +23,7 @@
                     <svg class="me-1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#feb820}</style><path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/></svg>
                     <h6 class="card-title" style="color:  #4d4d4d; font-size: 15px;">{{item.discount}}</h6>
                 </span>
-                <button class="btn btn-success" style="width:100%">Add to cart</button>
+                <button (click)="addToCart(i)" class="btn btn-success" style="width:100%">Add to cart</button>
             </div>
         </div>
     </div>

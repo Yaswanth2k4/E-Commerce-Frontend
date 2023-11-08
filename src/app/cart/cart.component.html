@@ -1,1 +1,34 @@
-<p>cart works!</p>
+<div [style]="cs.cartVisibility" class="cart container mb-5 border border-1">
+    <a href="" (click)="close($event)" class="bg-white p-0" style="width:fit-content"><svg class="close" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.close{fill:#cc0000}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
+    <span *ngIf="cs.cartItems.length>0; else empty">
+        <h3 class="mb-3 text-center" style="color: #333333;">Your Cart</h3>
+        <div *ngFor="let item of cs.cartItems;index as i" class="card mb-2">
+            <div class="img-bg my-2 mx-3">
+                <img class="img-fluid" type="png" [src]="item.imagePath"  alt="succulent-set" [style]="item.style" >
+            </div>
+            <div class="info container me-3">
+                <h5 class="card-title" style="color:  #4d4d4d;">{{item.title}}</h5>
+                <p class="card-title" style="color: gray;text-decoration: line-through;">Rs.{{item.orig_price}}</p>
+                <span>
+                    <h5 class="card-title" style="color: lightcoral;">Rs.{{item.price}}</h5>
+                    <select class="form-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </span>
+            </div>
+            <span>
+                <a href="" (click)="remove($event,i)" class="bg-white p-0" style="width:fit-content"><svg class="remove" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.remove{fill:#cc0000}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
+            </span>
+        </div>
+    </span>
+    <ng-template #empty>
+        <div class="d-flex flex-column justify-content-center" style="align-items: center;;height: 100vh;width: 100%;">
+            <h5>Your cart is empty!</h5>
+            <button (click)="close($event)" class="btn btn-dark" style="width: fit-content;">Continue Shopping</button>
+        </div>
+    </ng-template>
+</div>
+

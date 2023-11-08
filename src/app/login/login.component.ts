@@ -14,8 +14,7 @@ export class LoginComponent{
   loginStyle="";
   signupStyle="background-color:lightgray";
 
-  constructor(public ls:LoginService){
-  }
+  constructor(public ls:LoginService){}
 
   loginClick()
   {
@@ -33,4 +32,11 @@ export class LoginComponent{
     this.loginStyle="background-color:lightgray";
     this.signupStyle="";
   }
+
+  close(event:MouseEvent)
+  {
+    event.preventDefault();
+    this.ls.visibility="visibility:hidden"
+  }
+
 }

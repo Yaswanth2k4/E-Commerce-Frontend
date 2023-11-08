@@ -15,6 +15,7 @@ import { VideoComponent } from './video/video.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginService } from './login.service';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { LoginService } from './login.service';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [LoginService],
+  providers: [LoginService,CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
