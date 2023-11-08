@@ -12,6 +12,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { SecondfeatureComponent } from './secondfeature/secondfeature.component';
 import { EssentialsComponent } from './essentials/essentials.component';
 import { VideoComponent } from './video/video.component';
+import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { VideoComponent } from './video/video.component';
     GalleryComponent,
     SecondfeatureComponent,
     EssentialsComponent,
-    VideoComponent
+    VideoComponent,
+    LoginComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

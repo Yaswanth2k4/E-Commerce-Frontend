@@ -1,0 +1,16 @@
+<div class="loginbox container border rounded-3 mb-5 d-flex flex-column">
+    <h2 *ngIf="Login" class="text-center mt-3">Login</h2>
+    <h2 *ngIf="!Login" class="text-center mt-3">SignUp</h2>
+    <div class="buttons container border-0 rounded-2 w-75 mt-4 px-0 d-flex flex-row" style="background-color: lightgray;">
+        <button (click)="loginClick()" [class]="loginClass" [style]="loginStyle" class="btn border-0 w-50">Login</button>
+        <button (click)="signupClick()" [class]="signupClass" [style]="signupStyle" class="btn border-0 w-50">Signup</button>
+    </div>
+    <form class="container d-flex flex-column px-0 py-3">
+        <input *ngIf="!Login" class="rounded-1 my-2rounded-1 my-2" type="text" placeholder="Enter name" required>
+        <input class="rounded-1 my-2" type="email" placeholder="Email address" required>
+        <input class="rounded-1 my-2" type="password" placeholder="password" required>
+        <button *ngIf="Login" type="submit" class="btn btn-dark container">Login</button>
+        <button *ngIf="!Login" type="submit" class="btn btn-dark container">SignUp</button>
+    </form>
+    <h5 *ngIf="Login" (click)="signupClick()" class="mt-4 text-center">New user?<span><button class="border-0 bg-white fw-semibold" style="color:blue">Signup</button></span></h5>
+</div>  

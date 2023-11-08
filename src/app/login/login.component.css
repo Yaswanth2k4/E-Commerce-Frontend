@@ -1,0 +1,62 @@
+.loginbox{
+    position: fixed;
+    z-index: 1;
+    left: 35%;
+    top: 20%;
+    background-color: white;
+    overflow: hidden;
+    width:30%;
+    height:55vh;
+}
+
+.buttons button{
+    height: 50px;
+    font-size: 21px;
+}
+
+form{
+    width: 75%;
+}
+
+input{
+    height: 50px;
+    border:1px solid lightgray
+}
+
+input:focus{
+    outline: 1px solid gray;
+}
+
+::placeholder{
+    font-size: 21px;
+    padding-left: 10px;
+}
+
+form button{
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+@media (min-width:400px) and (max-width:700px) {
+    .loginbox{
+        width:90%;
+        left:5%;
+        top:12%;
+    }
+}
+
+@media (min-width:701px) and (max-width:1000px) {
+    .loginbox{
+        width:60%;
+        left:20%;
+    }
+}
+
+@media (min-width:1001px) and (max-width:1300px) {
+    .loginbox{
+        width:50%;
+        left:25%;
+    }
+}
