@@ -1,6 +1,6 @@
 .loginbox{
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 35%;
     top: 20%;
     background-color: white;
