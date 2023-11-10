@@ -8,7 +8,6 @@
     height:50vh;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     padding:20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -47,6 +46,11 @@ p{
     font-size: 13px;
 }
 select{width: 25%;}
+
+#bill{
+    border: 0px;
+    border-top: 1px solid lightgray;
+}
 
 @media (min-width:400px) and (max-width:500px){
     .cart{

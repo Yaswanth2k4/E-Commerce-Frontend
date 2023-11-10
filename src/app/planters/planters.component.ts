@@ -15,6 +15,6 @@ export class PlantersComponent {
   addToCart(i:number)
     {
       this.cs.cartItems.push(planters[i]);
-      console.log(planters[i]);
+      this.cs.cartTotal=this.cs.cartTotal + Number(planters[i].cost);
     }
 }

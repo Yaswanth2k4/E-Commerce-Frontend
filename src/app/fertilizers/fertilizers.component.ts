@@ -15,6 +15,6 @@ export class FertilizersComponent {
   addToCart(i:number)
     {
       this.cs.cartItems.push(fertilizers[i]);
-      console.log(fertilizers[i]);
+      this.cs.cartTotal=this.cs.cartTotal + Number(fertilizers[i].cost);
     }
 }

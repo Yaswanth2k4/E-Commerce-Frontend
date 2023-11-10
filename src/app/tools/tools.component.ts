@@ -15,6 +15,6 @@ export class ToolsComponent {
   addToCart(i:number)
     {
       this.cs.cartItems.push(tools[i]);
-      console.log(tools[i]);
+      this.cs.cartTotal=this.cs.cartTotal + Number(tools[i].cost);
     }
 }

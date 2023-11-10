@@ -15,6 +15,6 @@ export class PebblesComponent {
   addToCart(i:number)
     {
       this.cs.cartItems.push(pebbles[i]);
-      console.log(pebbles[i]);
+      this.cs.cartTotal=this.cs.cartTotal + Number(pebbles[i].cost);
     }
 }

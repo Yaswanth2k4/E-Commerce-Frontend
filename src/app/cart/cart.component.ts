@@ -6,9 +6,12 @@ import { CartService } from '../cart.service';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
+
 export class CartComponent {
 
-  constructor(public cs:CartService){}
+  constructor(public cs:CartService){
+    console.log(cs.cartTotal)
+  }
 
   close(event:MouseEvent)
   {
@@ -19,7 +22,8 @@ export class CartComponent {
   remove(event:any,i:number)
   {
     event.preventDefault();
+    this.cs.cartTotal=this.cs.cartTotal - Number(this.cs.cartItems[i].cost);
     this.cs.cartItems.splice(i,1);
+    console.log(this.cs.cartTotal);
   }
-
 }

@@ -7,6 +7,7 @@ import { CartService } from '../cart.service';
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.css']
 })
+
 export class ItemsComponent {
   items=items;
 
@@ -15,6 +16,6 @@ export class ItemsComponent {
   addToCart(i:number)
     {
       this.cs.cartItems.push(items[i]);
-      console.log(items[i]);
+      this.cs.cartTotal=this.cs.cartTotal + Number(items[i].cost);
     }
 }
