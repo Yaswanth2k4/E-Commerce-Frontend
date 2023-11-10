@@ -81,7 +81,7 @@ const offerItems=[
         "imagePath":'assets/images/snake.png',
         "orig_price":"963",
         "price":"799 (17% off)",
-        "title":'Sansevieria trifasciata, Snake Plant (var. laurentii) - Plant',
+        "title":'Sansevieria trifasciata, Snake Plant - Plant',
         "reviews":497,
         "discount":"Extra 30% Instant Discount",
         "style":{ 

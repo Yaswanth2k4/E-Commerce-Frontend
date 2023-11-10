@@ -16,6 +16,11 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginService } from './login.service';
 import { CartService } from './cart.service';
+import { ItemsComponent } from './items/items.component';
+import { PlantersComponent } from './planters/planters.component';
+import { FertilizersComponent } from './fertilizers/fertilizers.component';
+import { PebblesComponent } from './pebbles/pebbles.component';
+import { ToolsComponent } from './tools/tools.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { CartService } from './cart.service';
     EssentialsComponent,
     VideoComponent,
     LoginComponent,
-    CartComponent
+    CartComponent,
+    ItemsComponent,
+    PlantersComponent,
+    FertilizersComponent,
+    PebblesComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,
