@@ -52,7 +52,7 @@ select{width: 25%;}
     border-top: 1px solid lightgray;
 }
 
-@media (min-width:400px) and (max-width:500px){
+@media (max-width:500px){
     .cart{
         width:90%;
         left:5%;

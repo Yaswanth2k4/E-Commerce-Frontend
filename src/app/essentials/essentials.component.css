@@ -65,6 +65,9 @@ img{
     #div3 button{
         font-size: 15px;
     }
+    h4{
+        font-size: 15px;
+    }
 }
 
 @media (min-width:770px) and (max-width:1200px){
@@ -73,19 +76,13 @@ img{
         height:10rem;
         overflow: hidden;
     }
-    .card-img-overlay h3{
-        font-size: 23px;
-    }
-    .card-img-overlay h5{
-        font-size: 15px;
-    }
-    #div2 h3{
+    h3{
         font-size: 17px;
     }
-    #div2 h5{
+    h5{
         font-size: 13px;
     }
-    #div2 button{
+    button{
         font-size: 15px;
     }
     #div3 h3{
@@ -94,12 +91,12 @@ img{
     #div3 h5{
         font-size: 13px;
     }
-    #div3 button{
+    h4{
         font-size: 15px;
     }
 }
 
-@media (min-width:400px) and (max-width:769px){
+@media (max-width:769px){
     .essentials{
         display: flex;
         flex-direction: column;
@@ -111,9 +108,15 @@ img{
         overflow: hidden;
     }
     .card-img-overlay h3{
-        font-size: 23px;
+        font-size: 20px;
     }
     .card-img-overlay h5{
+        font-size: 14px;
+    }
+    button{
+        font-size: 10px;
+    }
+    h4{
         font-size: 15px;
     }
 }

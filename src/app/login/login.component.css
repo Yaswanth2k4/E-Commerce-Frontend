@@ -45,11 +45,37 @@ form button{
     font-size: 21px;
 }
 
-@media (min-width:400px) and (max-width:700px) {
+@media (min-width:330px) and (max-width:500px) {
     .loginbox{
         width:90%;
+        height: 45vh;
         left:5%;
         top:12%;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .buttons button{
+        font-size: 15px;
+        height: 35px;
+    }
+    input{
+        height: 35px;
+    }
+    ::placeholder{
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    form button{
+        height:35px;
+        font-size: 15px;
+    }
+    span button{
+        height: 35px;
+        font-size: 15px;
+    }
+    h5{
+        font-size: 15px;
     }
 }
 

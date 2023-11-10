@@ -6,7 +6,7 @@
 }
 
 .left{
-    min-width: 375px;
+    min-width: 300px;
     width:60%;
     height:95vh;
     overflow: hidden;
@@ -14,12 +14,16 @@
 }
 
 .right{
-    min-width: 375px;
+    min-width: 300px;
     min-height: 700px;
     width:40%;
     height:95vh;
     padding: 25px 18px;
     overflow: hidden;
+}
+
+.l1{
+    height:48%;
 }
 
 .l2{
@@ -43,7 +47,9 @@
     transform: translateY(-19%) scale(1.2);
 }
 
-@media (min-width:400px) and (max-width:1200px){
+
+
+@media (min-width:330px) and (max-width:1200px){
     .gallery{
         flex-direction: column;
     }
@@ -60,12 +66,18 @@
         padding: 0px;
     }
     .card-img-overlay h1{
-        font-size: 23px;
+        font-size: 20px;
     }
     .card-img-overlay h3{
-        font-size: 23px;
+        font-size: 20px;
     }
     .card-img-overlay h5{
+        font-size: 14px;
+    }
+    button{
+        font-size: 10px;
+    }
+    h4{
         font-size: 15px;
     }
 }

@@ -1,0 +1,17 @@
+p{
+    font-size: 20px;
+}
+
+@media (min-width:330px) and (max-width:399px)
+{
+    h4{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:400px) and (max-width:500px)
+{
+    h4{
+        font-size: 15px;
+    }
+}
