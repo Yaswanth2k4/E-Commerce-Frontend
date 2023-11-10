@@ -15,9 +15,6 @@ export class HeaderComponent {
   constructor(public ls:LoginService,public cs:CartService){
   }
 
-  loginClick: boolean=true;
-  cartClick: boolean=true;
-
   handleClick(event:any,name:String)
   {
     event.preventDefault();
@@ -29,8 +26,6 @@ export class HeaderComponent {
       this.cartStyle="";
       this.ls.visibility="visibility:hidden";
       this.cs.cartVisibility="visibility:hidden";
-      this.loginClick=true;
-      this.cartClick=true;
     }
     if(name==="cart")
     {
@@ -38,35 +33,15 @@ export class HeaderComponent {
       this.loginStyle="";
       this.homeStyle="";
       this.ls.visibility="visibility:hidden"
-      this.loginClick=true;
-      if(this.cartClick) 
-      {
-        this.cs.cartVisibility="visibility:visible";
-        this.cartClick=false;
-      }
-      else
-      {
-        this.cs.cartVisibility="visibility:hidden";
-        this.cartClick=true;
-      }
+      this.cs.cartVisibility="visibility:visible";
     }
     if(name==="login")
     {
       this.loginStyle="fill:black"
       this.homeStyle="";
       this.cartStyle="";
-      this.cartClick=true;
       this.cs.cartVisibility="visibility:hidden";
-      if(this.loginClick) 
-      {
-        this.ls.visibility="visibility:visible";
-        this.loginClick=false;
-      }
-      else
-      {
-        this.ls.visibility="visibility:hidden";
-        this.loginClick=true;
-      }
+      this.ls.visibility="visibility:visible";
     }
   }
 }
