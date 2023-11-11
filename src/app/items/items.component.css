@@ -68,6 +68,9 @@ p{
     .stars{
         height: 0.5em;
     }
+    h4{
+        font-size: 15px;
+    }
 }
 
 @media (min-width:380px) and (max-width:400px) {
@@ -93,6 +96,9 @@ p{
     .stars{
         height: 0.5em;
     }
+    h4{
+        font-size: 15px;
+    }
 }
 
 @media (min-width:401px) and (max-width:600px) {
@@ -117,5 +123,8 @@ p{
     }
     .stars{
         height: 0.5em;
+    }
+    h4{
+        font-size: 15px;
     }
 }
