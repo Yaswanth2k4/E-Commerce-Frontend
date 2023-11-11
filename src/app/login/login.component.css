@@ -45,15 +45,19 @@ form button{
     font-size: 21px;
 }
 
+.close{
+    height:2em;
+}
+
 @media (min-width:330px) and (max-width:500px) {
     .loginbox{
         width:90%;
-        height: 45vh;
+        height: 50vh;
         left:5%;
         top:12%;
     }
     h2{
-        font-size: 15px;
+        font-size: 23px;
     }
     .buttons button{
         font-size: 15px;
@@ -77,12 +81,18 @@ form button{
     h5{
         font-size: 15px;
     }
+    .close{
+        height:1.5em;
+    }
 }
 
-@media (min-width:701px) and (max-width:1000px) {
+@media (min-width:501px) and (max-width:1000px) {
     .loginbox{
         width:60%;
         left:20%;
+    }
+    .close{
+        height:1.5em;
     }
 }
 

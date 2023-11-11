@@ -45,14 +45,25 @@
 p{
     font-size: 13px;
 }
-select{width: 25%;}
+select{
+    border: 1px solid lightgray;
+    width: 25%;
+}
 
 #bill{
     border: 0px;
     border-top: 1px solid lightgray;
+    height: 60px;
 }
 
-@media (max-width:500px){
+.remove{
+    height:2em;
+}
+.close{
+    height:2em;
+}
+
+@media (max-width:1000px){
     .cart{
         width:90%;
         left:5%;
@@ -61,7 +72,7 @@ select{width: 25%;}
         height: 100px;
     }
     .img-bg{
-        width:30%;
+        width:40%;
     }
     .info{
         margin-top: 7px;
@@ -69,18 +80,37 @@ select{width: 25%;}
         padding:4px;
     }
     h5{
-        font-size: 12px;
+        font-size: 10px;
     }
     p{
         font-size: 8px;
     }
     select{
-        font-size: 3px;
-        width:20px;
+        height: 15px;
+        font-size: 9px;
+        width:25%;
     }
     .info span{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    #bill{
+        height: 30px;
+    }
+    .remove{
+        height: 1em;
+    }
+    .close{
+        height: 1.5em;
+    }
+    .empty h5{
+        font-size: 15px;
     }
 }

@@ -1,6 +1,6 @@
 <div [style]="cs.cartVisibility" class="cart container mb-5 border border-1">
     <div *ngIf="cs.cartItems.length>0; else empty" style="overflow: scroll;">
-        <a href="" (click)="close($event)" class="bg-white p-0" style="width:fit-content"><svg class="close" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.close{fill:#cc0000}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
+        <a href="" (click)="close($event)" class="bg-white p-0" style="width:fit-content"><svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><style>.close{fill:#cc0000}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
         <div>
             <h3 class="mb-3 text-center" style="color: #333333;">Your Cart</h3>
             <div *ngFor="let item of cs.cartItems;index as i" class="card mb-2">
@@ -12,7 +12,7 @@
                     <p class="card-title" style="color: gray;text-decoration: line-through;">Rs.{{item.orig_price}}</p>
                     <span>
                         <h5 class="card-title" style="color: lightcoral;">Rs.{{item.price}}</h5>
-                        <select class="form-select">
+                        <select class="rounded-1">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -21,17 +21,17 @@
                     </span>
                 </div>
                 <span>
-                    <a href="" (click)="remove($event,i)" class="bg-white p-0" style="width:fit-content"><svg class="remove" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.remove{fill:#cc0000}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
+                    <a href="" (click)="remove($event,i)" class="bg-white p-0" style="width:fit-content"><svg class="remove" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><style>.remove{fill:#cc0000}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></a>
                 </span>
             </div>
         </div>
-        <div id="bill" class="position-absolute bottom-0 start-0 rounded-0 card bg-red d-flex flex-row justify-content-end" style="height: 60px;">
+        <div id="bill" class="position-absolute bottom-0 start-0 rounded-0 card bg-red d-flex flex-row justify-content-end">
             <h4 class="text-center mb-3 me-5 mt-2" style="color: #333333;">Cart Total = Rs.{{cs.cartTotal}}</h4>
         </div>
     </div>
     
     <ng-template #empty>
-        <div class="d-flex flex-column justify-content-center" style="align-items: center;;height: 100vh;width: 100%;">
+        <div class="empty d-flex flex-column justify-content-center" style="align-items: center;;height: 100vh;width: 100%;">
             <h5>Your cart is empty!</h5>
             <button (click)="close($event)" class="btn btn-dark" style="width: fit-content;">Continue Shopping</button>
         </div>
