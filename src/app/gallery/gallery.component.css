@@ -20,6 +20,11 @@
     height:95vh;
     padding: 25px 18px;
     overflow: hidden;
+    justify-content:space-between;
+}
+
+.right div{
+    height: 32%;
 }
 
 .l1{
@@ -47,14 +52,30 @@
     transform: translateY(-19%) scale(1.2);
 }
 
-
-
 @media (min-width:330px) and (max-width:1200px){
     .gallery{
         flex-direction: column;
     }
+    .l1{
+        height: 45%;
+    }
     .l2{
-        margin-top: 15px;
+        height: 45%;
+    }
+    .l2 img{
+        transition: all 0.5s;
+        transform: translateY(0%);
+    }
+    
+    .l2:hover img{
+        transform: translateY(0%) scale(1.2);
+    }
+    .right div{
+        height: 28%;
+        margin-bottom: 23px;
+    }
+    .right div:first-child{
+        margin-top: -70px;
     }
     .gallery .left{
         width: 100%;
@@ -62,6 +83,7 @@
         padding:15px 0px;
     }
     .gallery .right{
+        justify-content: center;
         width: 100%;
         padding: 0px;
     }

@@ -119,4 +119,10 @@ img{
     h4{
         font-size: 15px;
     }
+    .hover3 img{
+        transform: translateY(0%);
+    }
+    .hover3:hover img{
+        transform: translateY(-5%) scale(1.1);
+    }
 }
