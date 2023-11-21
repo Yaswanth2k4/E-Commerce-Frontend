@@ -45,65 +45,9 @@ p{
     height: 0.625em;
 }
 
-@media (min-width:330px) and (max-width:379px){
+@media (min-width:330px) and (max-width:600px){
     .product{
-        width:150px;
-        height:23rem;
-    }
-    h5{
-        font-size: 13px;
-    }
-    p{
-        font-size: 9px;
-    }
-    h6{
-        font-size: 9px;
-    }
-    button{
-        font-size: 9px;
-    }
-    span p{
-        margin-top: 1px;
-    }
-    .stars{
-        height: 0.5em;
-    }
-    h4{
-        font-size: 15px;
-    }
-}
-
-@media (min-width:380px) and (max-width:400px) {
-    .product{
-        width: 180px;
-        height:23rem;
-    }
-    h5{
-        font-size: 13px;
-    }
-    p{
-        font-size: 9px;
-    }
-    h6{
-        font-size: 9px;
-    }
-    button{
-        font-size: 9px;
-    }
-    span p{
-        margin-top: 1px;
-    }
-    .stars{
-        height: 0.5em;
-    }
-    h4{
-        font-size: 15px;
-    }
-}
-
-@media (min-width:401px) and (max-width:600px) {
-    .product{
-        width:195px;
+        width:45%;
         height:23rem;
     }
     h5{
